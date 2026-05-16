@@ -90,7 +90,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ssot-registry-pack-template"
+name = "ssot-pack-web-performance-rum"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
