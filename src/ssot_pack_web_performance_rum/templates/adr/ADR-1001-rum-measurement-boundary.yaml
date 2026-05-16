@@ -1,0 +1,36 @@
+{
+  "id": "adr:rum-measurement-boundary",
+  "number": 1001,
+  "slug": "rum-measurement-boundary",
+  "title": "RUM Measurement Boundary",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "pack": "pack:web-performance-rum",
+  "scope": {
+    "governs": "Web Performance And Real User Measurement",
+    "excludes": [
+      "Other governance packs",
+      "Downstream implementation-specific conformance claims",
+      "Repository-specific feature, claim, test, evidence, boundary, and release rows"
+    ]
+  },
+  "authority_sources": [
+    "Navigation Timing",
+    "Resource Timing",
+    "User Timing",
+    "Performance Timeline",
+    "Reporting API",
+    "W3C Beacon API"
+  ],
+  "decision": [
+    "Treat Web Performance And Real User Measurement as the only governed domain for this pack.",
+    "Do not cross-link this pack to other governance packs.",
+    "Use packaged ADR and SPEC documents as immutable authority inputs for downstream SSOT synchronization.",
+    "Create downstream features, claims, tests, evidence, risks, boundaries, and releases outside the pack metadata lifecycle."
+  ],
+  "notes": [
+    "This document was seeded from digital-analytics-customer-data-collection-sources.md.",
+    "This pack intentionally does not refer to sibling governance packs."
+  ]
+}

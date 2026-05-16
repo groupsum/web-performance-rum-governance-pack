@@ -2,4 +2,4 @@
 
 Suggested GitHub description:
 
-> Template for installable SSOT Registry governance packs with packaged ADRs, SPECs, manifests, tests, and release-ready Python packaging.
+> Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence.

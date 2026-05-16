@@ -2,13 +2,9 @@ from __future__ import annotations
 
 import unittest
 
-from ssot_pack_contracts import InvalidPackManifestError
-
-from ssot_registry_pack_template import (
+from ssot_pack_web_performance_rum import (
     __pypi_package_name__,
     __ssot_package_name__,
-    __version__,
-    list_packaged_document_ids,
     load_document_manifest,
     load_pack_manifest,
     load_pack_metadata,
@@ -17,40 +13,34 @@ from ssot_registry_pack_template import (
 )
 
 
-class TemplateManifestTests(unittest.TestCase):
+class GovernancePackManifestTests(unittest.TestCase):
     def test_pack_metadata_contract_is_exposed(self) -> None:
         metadata = load_pack_metadata()
-        self.assertEqual("ssot-registry-pack-template", __ssot_package_name__)
-        self.assertEqual("ssot-registry-pack-template", __pypi_package_name__)
-        self.assertEqual("0.1.0", __version__)
+        self.assertEqual("ssot-pack-web-performance-rum", __ssot_package_name__)
+        self.assertEqual("ssot-pack-web-performance-rum", __pypi_package_name__)
         self.assertEqual("1.0.0", metadata["schema_version"])
-        self.assertEqual("ssot-registry-pack-template", metadata["ssot_package_name"])
-        self.assertEqual("ssot-registry-pack-template", metadata["pypi_package_name"])
-        self.assertEqual("ssot-registry-pack-template", metadata["origin"]["package_name"])
-        self.assertEqual("ssot_registry_pack_template", metadata["origin"]["import_name"])
+        self.assertEqual("ssot-pack-web-performance-rum", metadata["ssot_package_name"])
+        self.assertEqual("pack:web-performance-rum", metadata["origin"]["id"])
+        self.assertEqual("ssot_pack_web_performance_rum", metadata["origin"]["import_name"])
+        self.assertEqual("governance-pack", metadata["origin"]["kind"])
         self.assertEqual("extension-pack", metadata["trust"]["origin"])
-        self.assertEqual("extension-pack:ssot-registry-pack-template", metadata["trust"]["reservation_owner"])
+        self.assertEqual("extension-pack:ssot-pack-web-performance-rum", metadata["trust"]["reservation_owner"])
+        self.assertFalse(metadata["trust"]["trusted_by_default"])
         self.assertEqual("1.0.0", load_pack_schema_version())
-        self.assertEqual("0.1.0", metadata["version"])
 
     def test_pack_manifest_contract_is_exposed(self) -> None:
         manifest = load_pack_manifest()
-        self.assertEqual("ssot-registry-pack-template", manifest["metadata"]["origin"]["package_name"])
-        self.assertEqual([], manifest["documents"]["adr"])
-        self.assertEqual([], manifest["documents"]["spec"])
-        self.assertEqual([], list_packaged_document_ids())
+        self.assertEqual("ssot-pack-web-performance-rum", manifest["metadata"]["origin"]["package_name"])
+        self.assertEqual(2, len(manifest["documents"]["adr"]))
+        self.assertEqual(4, len(manifest["documents"]["spec"]))
 
-    def test_adr_manifest_starts_empty(self) -> None:
-        manifest = load_document_manifest("adr")
-        self.assertEqual([], manifest)
-
-    def test_spec_manifest_starts_empty(self) -> None:
-        manifest = load_document_manifest("spec")
-        self.assertEqual([], manifest)
-
-    def test_missing_packaged_document_raises_file_not_found(self) -> None:
-        with self.assertRaises(InvalidPackManifestError):
-            read_packaged_document_text("spec", "missing-document.yaml")
+    def test_packaged_documents_are_readable(self) -> None:
+        adr_manifest = load_document_manifest("adr")
+        spec_manifest = load_document_manifest("spec")
+        self.assertEqual("adr:rum-measurement-boundary", adr_manifest[0]["id"])
+        self.assertEqual("spc:navigation-timing-contract", spec_manifest[0]["id"])
+        self.assertIn("Web Performance And Real User Measurement", read_packaged_document_text("adr", adr_manifest[0]["filename"]))
+        self.assertIn("Web Performance And Real User Measurement", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
 
 
 if __name__ == "__main__":

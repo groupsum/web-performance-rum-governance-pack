@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:rum-measurement-boundary",
+    "number": 1001,
+    "slug": "rum-measurement-boundary",
+    "title": "RUM Measurement Boundary",
+    "filename": "ADR-1001-rum-measurement-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1001-rum-measurement-boundary.yaml",
+    "sha256": "4a3914eb46b172bcbd89d278a2a8e6a22c6165e79638d44363f7d616aaae9ebb",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-web-performance-rum",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:browser-performance-entry-authority",
+    "number": 1002,
+    "slug": "browser-performance-entry-authority",
+    "title": "Browser Performance Entry Authority",
+    "filename": "ADR-1002-browser-performance-entry-authority.yaml",
+    "target_path": ".ssot/adr/ADR-1002-browser-performance-entry-authority.yaml",
+    "sha256": "82526c041e3750cba0f9e69dca161dc891be4dbfcc1fb38b2b8f0eef846052bd",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-web-performance-rum",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]

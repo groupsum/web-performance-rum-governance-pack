@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-registry-pack-template"
+name = "ssot-pack-web-performance-rum"
 version = "0.1.0"
-description = "Template repository for installable SSOT Registry ADR and SPEC governance packs."
+description = "Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence."
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
 license = "Apache-2.0"
@@ -19,8 +19,7 @@ keywords = [
   "ssot-registry",
   "extension-pack",
   "governance-pack",
-  "template",
-  "governance",
+    "governance",
   "adr",
   "spec",
   "uv",
@@ -45,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-registry-pack-template"
-Repository = "https://github.com/groupsum/ssot-registry-pack-template"
-Issues = "https://github.com/groupsum/ssot-registry-pack-template/issues"
+Homepage = "https://github.com/groupsum/ssot-pack-web-performance-rum"
+Repository = "https://github.com/groupsum/ssot-pack-web-performance-rum"
+Issues = "https://github.com/groupsum/ssot-pack-web-performance-rum/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -56,9 +55,9 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-"ssot_registry_pack_template" = ["metadata.json"]
-"ssot_registry_pack_template.templates.adr" = ["*.json", "*.yaml"]
-"ssot_registry_pack_template.templates.specs" = ["*.json", "*.yaml"]
+"ssot_pack_web_performance_rum" = ["metadata.json"]
+"ssot_pack_web_performance_rum.templates.adr" = ["*.json", "*.yaml"]
+"ssot_pack_web_performance_rum.templates.specs" = ["*.json", "*.yaml"]
 
 [dependency-groups]
 dev = [
