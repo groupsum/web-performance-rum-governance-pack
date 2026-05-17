@@ -1,0 +1,27 @@
+{
+  "id": "adr:navigation-timing-rum-policy",
+  "number": 1001,
+  "slug": "navigation-timing-rum-policy",
+  "title": "Navigation Timing RUM Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Document navigation timing data is a primary source for page-load RUM measurement.",
+    "Capture and normalization decisions affect derived metrics, dashboards, exports, and audit evidence."
+  ],
+  "decision": [
+    "Use Navigation Timing as the authority for document navigation timing entries.",
+    "Capture navigation timing entries with enough context to derive page-load metrics.",
+    "Normalize timestamps and durations before storage, export, comparison, or evidence generation.",
+    "Reject or quarantine navigation entries that cannot be tied to a valid browsing context or measurement timestamp."
+  ],
+  "consequences": [
+    "Downstream implementations must make page-load metric derivation traceable to navigation timing entries.",
+    "Evidence should include raw entry fields, normalized fields, derived metrics, and rejection reasons.",
+    "Validation should cover complete entries, partial entries, and unsupported entry shapes."
+  ],
+  "authority_sources": [
+    "Navigation Timing"
+  ]
+}

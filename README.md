@@ -28,8 +28,12 @@ Web Performance And Real User Measurement
 
 ## Included ADRs
 
-- `adr:rum-measurement-boundary` - RUM Measurement Boundary
-- `adr:browser-performance-entry-authority` - Browser Performance Entry Authority
+- `adr:navigation-timing-rum-policy` - Navigation Timing RUM Policy
+- `adr:resource-timing-rum-policy` - Resource Timing RUM Policy
+- `adr:user-timing-instrumentation-policy` - User Timing Instrumentation Policy
+- `adr:performance-timeline-observation-policy` - Performance Timeline Observation Policy
+- `adr:browser-reporting-rum-policy` - Browser Reporting RUM Policy
+- `adr:beacon-rum-delivery-policy` - Beacon RUM Delivery Policy
 
 ## Included SPECs
 

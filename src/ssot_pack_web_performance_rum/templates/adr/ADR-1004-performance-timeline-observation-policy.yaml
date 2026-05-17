@@ -1,0 +1,27 @@
+{
+  "id": "adr:performance-timeline-observation-policy",
+  "number": 1004,
+  "slug": "performance-timeline-observation-policy",
+  "title": "Performance Timeline Observation Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Browser performance entries are exposed through a shared timeline and observation model.",
+    "RUM collection needs explicit behavior for observation, buffering, draining, ordering, and export."
+  ],
+  "decision": [
+    "Use Performance Timeline as the authority for retrieving and observing performance entries.",
+    "Observe only explicitly governed entry types.",
+    "Preserve entry ordering and entry type identity across collection, buffering, export, and evidence.",
+    "Document buffer drain behavior and dropped-entry handling."
+  ],
+  "consequences": [
+    "Downstream implementations must make observation behavior deterministic and testable.",
+    "Evidence should include observed entries, buffered entries, drained entries, and dropped-entry cases.",
+    "Source-specific entry validation remains governed by the specification that defines each entry family."
+  ],
+  "authority_sources": [
+    "Performance Timeline"
+  ]
+}

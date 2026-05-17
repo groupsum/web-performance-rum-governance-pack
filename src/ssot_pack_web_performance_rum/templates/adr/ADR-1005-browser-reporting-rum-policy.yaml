@@ -1,0 +1,27 @@
+{
+  "id": "adr:browser-reporting-rum-policy",
+  "number": 1005,
+  "slug": "browser-reporting-rum-policy",
+  "title": "Browser Reporting RUM Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Browser reports provide structured signals for platform and feature-specific reporting.",
+    "RUM systems need clear decisions for report ingestion, grouping, retention, and routing."
+  ],
+  "decision": [
+    "Use Reporting API as the authority for browser report ingestion and endpoint grouping behavior.",
+    "Preserve report type, report body, endpoint group, user agent context, and received timestamp.",
+    "Validate report payloads before storage, aggregation, or evidence generation.",
+    "Keep browser report ingestion distinct from performance timing entry capture."
+  ],
+  "consequences": [
+    "Downstream implementations must make report routing and retention testable.",
+    "Evidence should include accepted reports, rejected reports, endpoint group routing, and retained report fields.",
+    "Analytics consumers can distinguish browser reports from timing entries and beacon payloads."
+  ],
+  "authority_sources": [
+    "Reporting API"
+  ]
+}

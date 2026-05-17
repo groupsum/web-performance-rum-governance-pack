@@ -1,0 +1,27 @@
+{
+  "id": "adr:resource-timing-rum-policy",
+  "number": 1002,
+  "slug": "resource-timing-rum-policy",
+  "title": "Resource Timing RUM Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Resource timing entries describe network and load behavior for subresources.",
+    "RUM collection must decide how to filter, normalize, redact, and export resource timing data."
+  ],
+  "decision": [
+    "Use Resource Timing as the authority for resource timing entries.",
+    "Classify resources using entry fields rather than collector-specific route assumptions.",
+    "Apply privacy and cross-origin filtering before persistence, analytics, or export.",
+    "Retain evidence for accepted, redacted, and rejected resource timing entries."
+  ],
+  "consequences": [
+    "Downstream implementations must separate timing collection from privacy filtering.",
+    "Validation should cover same-origin entries, cross-origin redaction, initiator classification, and malformed entries.",
+    "Evidence should show source entry fields, filtered output, and filtering reasons."
+  ],
+  "authority_sources": [
+    "Resource Timing"
+  ]
+}

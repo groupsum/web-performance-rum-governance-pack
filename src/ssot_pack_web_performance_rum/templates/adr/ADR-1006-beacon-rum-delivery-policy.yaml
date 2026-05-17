@@ -1,0 +1,27 @@
+{
+  "id": "adr:beacon-rum-delivery-policy",
+  "number": 1006,
+  "slug": "beacon-rum-delivery-policy",
+  "title": "Beacon RUM Delivery Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "RUM payload delivery often needs non-blocking behavior during page lifecycle transitions.",
+    "Delivery policy affects session-end analytics reliability, payload sizing, fallback behavior, and audit evidence."
+  ],
+  "decision": [
+    "Use W3C Beacon API as the authority for asynchronous non-blocking telemetry delivery.",
+    "Use beacon delivery only for payloads that meet documented payload and lifecycle constraints.",
+    "Record delivery attempts, accepted payload shape, and fallback decisions as evidence.",
+    "Keep beacon delivery decisions separate from timing-entry validation and browser report ingestion."
+  ],
+  "consequences": [
+    "Downstream implementations must document when beacon delivery is attempted and when fallback delivery is used.",
+    "Validation should cover payload sizing, accepted delivery attempts, rejected payloads, and fallback cases.",
+    "Evidence should support review of unload or session-end telemetry delivery behavior."
+  ],
+  "authority_sources": [
+    "W3C Beacon API"
+  ]
+}

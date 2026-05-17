@@ -1,0 +1,37 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "web-performance-delivery-reporting-target-curation-authority"
+title: "Web Performance Delivery Reporting Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "web-performance"
+  - "reporting"
+  - "beacon"
+summary: "Reporting API and W3C Beacon API are the authoritative source family for curated browser report and non-blocking delivery targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Reporting API"
+  - "W3C Beacon API"
+body: |-
+  ## Context
+  
+  RUM systems commonly need browser reports and non-blocking telemetry delivery. These concerns are related to performance measurement but governed by separate browser platform sources.
+  
+  ## Decision
+  
+  This repository treats Reporting API and W3C Beacon API as the authoritative source family for curated web performance delivery and reporting targets.
+  
+  The curation boundary includes report ingestion, report routing, endpoint grouping, asynchronous delivery, payload handling, and delivery evidence targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime collectors, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for delivery and reporting targets must keep report semantics separate from beacon delivery semantics and timing-entry capture.
+

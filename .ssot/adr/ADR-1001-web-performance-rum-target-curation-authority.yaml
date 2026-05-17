@@ -1,0 +1,38 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "web-performance-rum-target-curation-authority"
+title: "Web Performance RUM Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "web-performance"
+  - "rum"
+summary: "Navigation Timing, Resource Timing, User Timing, and Performance Timeline are the authoritative source family for curated web performance RUM targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Navigation Timing"
+  - "Resource Timing"
+  - "User Timing"
+  - "Performance Timeline"
+body: |-
+  ## Context
+  
+  Web performance RUM targets depend on browser timing entries and observation interfaces. These targets should remain distinct from telemetry delivery and browser reporting targets.
+  
+  ## Decision
+  
+  This repository treats Navigation Timing, Resource Timing, User Timing, and Performance Timeline as the authoritative source family for curated web performance RUM targets.
+  
+  The curation boundary includes document navigation timing, resource timing, application marks and measures, performance entry observation, and performance entry export targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime features, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for RUM timing targets must preserve each timing and timeline source as a distinct curation concern.
+

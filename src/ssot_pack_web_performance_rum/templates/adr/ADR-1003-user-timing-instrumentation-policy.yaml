@@ -1,0 +1,27 @@
+{
+  "id": "adr:user-timing-instrumentation-policy",
+  "number": 1003,
+  "slug": "user-timing-instrumentation-policy",
+  "title": "User Timing Instrumentation Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Application-controlled marks and measures provide custom performance telemetry.",
+    "Uncontrolled mark and measure naming can make RUM data inconsistent or hard to validate."
+  ],
+  "decision": [
+    "Use User Timing as the authority for marks and measures.",
+    "Define stable naming rules for application marks and measures before collection.",
+    "Validate mark timestamps, measure durations, and source names before export or evidence generation.",
+    "Treat unsupported names or impossible durations as validation failures unless explicitly mapped."
+  ],
+  "consequences": [
+    "Downstream implementations must make application instrumentation names testable.",
+    "Evidence should include representative marks, measures, durations, and rejected inputs.",
+    "Metric consumers can rely on stable names and consistent duration semantics."
+  ],
+  "authority_sources": [
+    "User Timing"
+  ]
+}

@@ -1,0 +1,38 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "browser-performance-entry-target-curation-authority"
+title: "Browser Performance Entry Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "performance-entry"
+  - "browser"
+summary: "Browser performance entry targets are curated from Performance Timeline and the specific timing specifications that define entry families."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Performance Timeline"
+  - "Navigation Timing"
+  - "Resource Timing"
+  - "User Timing"
+body: |-
+  ## Context
+  
+  Performance entry targets span multiple browser specifications. The shared entry observation model should not collapse the specific entry-family sources that define navigation, resource, mark, and measure semantics.
+  
+  ## Decision
+  
+  This repository treats Performance Timeline as the shared authority for performance entry observation while retaining Navigation Timing, Resource Timing, and User Timing as entry-family authorities.
+  
+  The curation boundary includes entry observation, entry buffering, entry ordering, entry type identity, and source-specific entry field targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime feature rows, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for performance entry targets must keep shared observation behavior and source-specific entry fields explicitly traceable.
+
