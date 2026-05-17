@@ -1,0 +1,22 @@
+{
+  "id": "spc:reporting-api-report-ingestion-requirements",
+  "number": 2008,
+  "slug": "reporting-api-report-ingestion-requirements",
+  "title": "Reporting API Report Ingestion Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:browser-reporting-rum-policy"
+  ],
+  "authority_sources": [
+    "Reporting API"
+  ],
+  "requirements": [
+    "Accept browser report payloads using Reporting API report semantics.",
+    "Preserve report type, report body, endpoint group, user agent context, and received timestamp.",
+    "Validate report payloads before storage, aggregation, or evidence generation.",
+    "Provide accepted and rejected report payload fixtures."
+  ]
+}

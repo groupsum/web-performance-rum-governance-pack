@@ -1,0 +1,32 @@
+{
+  "id": "spc:web-performance-rum-audit-evidence-requirements",
+  "number": 2012,
+  "slug": "web-performance-rum-audit-evidence-requirements",
+  "title": "Web Performance RUM Audit Evidence Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:navigation-timing-rum-policy",
+    "adr:resource-timing-rum-policy",
+    "adr:user-timing-instrumentation-policy",
+    "adr:performance-timeline-observation-policy",
+    "adr:browser-reporting-rum-policy",
+    "adr:beacon-rum-delivery-policy"
+  ],
+  "authority_sources": [
+    "Navigation Timing",
+    "Resource Timing",
+    "User Timing",
+    "Performance Timeline",
+    "Reporting API",
+    "W3C Beacon API"
+  ],
+  "requirements": [
+    "Produce audit evidence for timing entry capture, derived metrics, entry observation, browser report ingestion, and beacon delivery.",
+    "Keep evidence outputs tied to the specific authority source and conformance target under test.",
+    "Include source inputs, normalized outputs, validation results, and rejection reasons where applicable.",
+    "Retain evidence in a form that can be reviewed independently of runtime implementation details."
+  ]
+}

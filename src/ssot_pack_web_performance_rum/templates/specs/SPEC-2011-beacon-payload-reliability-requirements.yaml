@@ -1,0 +1,22 @@
+{
+  "id": "spc:beacon-payload-reliability-requirements",
+  "number": 2011,
+  "slug": "beacon-payload-reliability-requirements",
+  "title": "Beacon Payload Reliability Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:beacon-rum-delivery-policy"
+  ],
+  "authority_sources": [
+    "W3C Beacon API"
+  ],
+  "requirements": [
+    "Validate beacon payload size and payload shape before delivery.",
+    "Record fallback behavior when beacon delivery is unavailable or rejected.",
+    "Preserve session-end or unload delivery context when available.",
+    "Provide evidence for valid payloads, oversized payloads, unavailable delivery, and fallback delivery."
+  ]
+}

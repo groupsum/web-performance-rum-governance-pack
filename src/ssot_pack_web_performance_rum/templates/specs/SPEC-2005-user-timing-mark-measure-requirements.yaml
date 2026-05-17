@@ -1,0 +1,22 @@
+{
+  "id": "spc:user-timing-mark-measure-requirements",
+  "number": 2005,
+  "slug": "user-timing-mark-measure-requirements",
+  "title": "User Timing Mark Measure Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:user-timing-instrumentation-policy"
+  ],
+  "authority_sources": [
+    "User Timing"
+  ],
+  "requirements": [
+    "Capture application marks and measures using User Timing semantics.",
+    "Validate mark names, measure names, timestamps, and durations before export or evidence generation.",
+    "Reject unsupported names or impossible durations unless explicitly mapped by policy.",
+    "Provide fixtures for accepted marks, accepted measures, rejected names, and invalid durations."
+  ]
+}

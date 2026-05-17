@@ -1,0 +1,22 @@
+{
+  "id": "spc:resource-timing-entry-requirements",
+  "number": 2003,
+  "slug": "resource-timing-entry-requirements",
+  "title": "Resource Timing Entry Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:resource-timing-rum-policy"
+  ],
+  "authority_sources": [
+    "Resource Timing"
+  ],
+  "requirements": [
+    "Capture resource timing entries using Resource Timing entry semantics.",
+    "Preserve resource name, initiator type, timing fields, and transfer fields when exposed.",
+    "Normalize resource timing values before persistence, aggregation, export, or evidence generation.",
+    "Validate accepted, partial, and malformed resource timing entries with explicit fixtures."
+  ]
+}

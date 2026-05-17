@@ -1,0 +1,22 @@
+{
+  "id": "spc:performance-entry-export-envelope-requirements",
+  "number": 2007,
+  "slug": "performance-entry-export-envelope-requirements",
+  "title": "Performance Entry Export Envelope Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:performance-timeline-observation-policy"
+  ],
+  "authority_sources": [
+    "Performance Timeline"
+  ],
+  "requirements": [
+    "Export performance entries with source, entry type, timestamp, duration, and collection context metadata.",
+    "Preserve the source specification family for each exported entry.",
+    "Keep exported timing entries distinct from browser reports and delivery acknowledgements.",
+    "Provide evidence for valid export envelopes and rejected incomplete envelopes."
+  ]
+}

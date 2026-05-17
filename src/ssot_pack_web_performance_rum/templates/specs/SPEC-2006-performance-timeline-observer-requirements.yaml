@@ -1,0 +1,22 @@
+{
+  "id": "spc:performance-timeline-observer-requirements",
+  "number": 2006,
+  "slug": "performance-timeline-observer-requirements",
+  "title": "Performance Timeline Observer Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:performance-timeline-observation-policy"
+  ],
+  "authority_sources": [
+    "Performance Timeline"
+  ],
+  "requirements": [
+    "Observe only explicitly governed performance entry types.",
+    "Preserve entry ordering, entry type, start time, duration, and source entry identity across buffering and draining.",
+    "Document dropped-entry and buffer-limit handling.",
+    "Provide evidence for observed, buffered, drained, and dropped performance entries."
+  ]
+}

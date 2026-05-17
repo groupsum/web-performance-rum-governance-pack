@@ -1,0 +1,33 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1004"
+number: 1004
+slug: "web-performance-rum-target-boundary-curation-requirements"
+title: "Web Performance RUM Target Boundary Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "web-performance"
+  - "source-curation"
+summary: "Web performance RUM target curation must keep timing, timeline, reporting, and delivery concerns source-backed and separate."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Navigation Timing"
+  - "Resource Timing"
+  - "User Timing"
+  - "Performance Timeline"
+  - "Reporting API"
+  - "W3C Beacon API"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Web performance RUM source curation MUST retain separate target groupings for timing capture, performance entry observation, browser report ingestion, and beacon delivery.
+  
+  Curated targets MUST be source-oriented and MUST NOT assert downstream implementation conformance.
+  
+  Curated targets MUST be maintainable without referencing sibling governance packs or downstream repository-specific proof rows.
+

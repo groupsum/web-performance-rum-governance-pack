@@ -1,0 +1,31 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1001"
+number: 1001
+slug: "web-performance-rum-source-curation-requirements"
+title: "Web Performance RUM Source Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "web-performance"
+  - "rum"
+summary: "Web performance RUM source curation must retain timing and timeline authority sources as distinct curation concerns."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Navigation Timing"
+  - "Resource Timing"
+  - "User Timing"
+  - "Performance Timeline"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for web performance RUM targets MUST retain Navigation Timing, Resource Timing, User Timing, and Performance Timeline as explicit authority sources.
+  
+  Source curation MUST distinguish document navigation entries, resource entries, application marks and measures, and shared performance entry observation behavior.
+  
+  Source curation MUST NOT treat downstream implementation claims, runtime features, evidence rows, or release boundaries as part of this repository-local source authority.
+

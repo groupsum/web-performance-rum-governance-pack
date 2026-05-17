@@ -1,0 +1,22 @@
+{
+  "id": "spc:resource-timing-privacy-filtering-requirements",
+  "number": 2004,
+  "slug": "resource-timing-privacy-filtering-requirements",
+  "title": "Resource Timing Privacy Filtering Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:resource-timing-rum-policy"
+  ],
+  "authority_sources": [
+    "Resource Timing"
+  ],
+  "requirements": [
+    "Apply governed timing exposure and redaction rules before storing or exporting resource timing entries.",
+    "Preserve redaction reasons for fields omitted from exported RUM evidence.",
+    "Keep privacy filtering separate from resource classification and metric derivation.",
+    "Provide evidence for same-origin, cross-origin, redacted, and rejected resource timing examples."
+  ]
+}

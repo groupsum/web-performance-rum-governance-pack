@@ -37,10 +37,18 @@ Web Performance And Real User Measurement
 
 ## Included SPECs
 
-- `spc:navigation-timing-contract` - Navigation Timing Contract
-- `spc:resource-timing-contract` - Resource Timing Contract
-- `spc:user-timing-performance-timeline-contract` - User Timing Performance Timeline Contract
-- `spc:reporting-api-rum-contract` - Reporting API RUM Contract
+- `spc:navigation-timing-entry-requirements` - Navigation Timing Entry Requirements
+- `spc:navigation-timing-rum-derived-metric-requirements` - Navigation Timing RUM Derived Metric Requirements
+- `spc:resource-timing-entry-requirements` - Resource Timing Entry Requirements
+- `spc:resource-timing-privacy-filtering-requirements` - Resource Timing Privacy Filtering Requirements
+- `spc:user-timing-mark-measure-requirements` - User Timing Mark Measure Requirements
+- `spc:performance-timeline-observer-requirements` - Performance Timeline Observer Requirements
+- `spc:performance-entry-export-envelope-requirements` - Performance Entry Export Envelope Requirements
+- `spc:reporting-api-report-ingestion-requirements` - Reporting API Report Ingestion Requirements
+- `spc:reporting-api-endpoint-group-requirements` - Reporting API Endpoint Group Requirements
+- `spc:beacon-rum-delivery-requirements` - Beacon RUM Delivery Requirements
+- `spc:beacon-payload-reliability-requirements` - Beacon Payload Reliability Requirements
+- `spc:web-performance-rum-audit-evidence-requirements` - Web Performance RUM Audit Evidence Requirements
 
 ## Install With uv
 

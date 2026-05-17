@@ -1,0 +1,30 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1002"
+number: 1002
+slug: "web-performance-reporting-source-curation-requirements"
+title: "Web Performance Reporting Source Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "web-performance"
+  - "reporting"
+  - "beacon"
+summary: "Web performance reporting source curation must retain Reporting API and W3C Beacon API as distinct delivery and reporting authorities."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Reporting API"
+  - "W3C Beacon API"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for web performance reporting targets MUST retain Reporting API as the authority for browser report ingestion and endpoint grouping targets.
+  
+  Source curation MUST retain W3C Beacon API as the authority for asynchronous non-blocking telemetry delivery targets.
+  
+  Source curation MUST keep report ingestion targets separate from beacon delivery targets and browser timing entry targets.
+

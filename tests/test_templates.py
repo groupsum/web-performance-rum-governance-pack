@@ -32,15 +32,15 @@ class GovernancePackManifestTests(unittest.TestCase):
         manifest = load_pack_manifest()
         self.assertEqual("ssot-pack-web-performance-rum", manifest["metadata"]["origin"]["package_name"])
         self.assertEqual(6, len(manifest["documents"]["adr"]))
-        self.assertEqual(4, len(manifest["documents"]["spec"]))
+        self.assertEqual(12, len(manifest["documents"]["spec"]))
 
     def test_packaged_documents_are_readable(self) -> None:
         adr_manifest = load_document_manifest("adr")
         spec_manifest = load_document_manifest("spec")
         self.assertEqual("adr:navigation-timing-rum-policy", adr_manifest[0]["id"])
-        self.assertEqual("spc:navigation-timing-contract", spec_manifest[0]["id"])
+        self.assertEqual("spc:navigation-timing-entry-requirements", spec_manifest[0]["id"])
         self.assertIn("Navigation Timing RUM Policy", read_packaged_document_text("adr", adr_manifest[0]["filename"]))
-        self.assertIn("Web Performance And Real User Measurement", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
+        self.assertIn("Navigation Timing Entry Requirements", read_packaged_document_text("spec", spec_manifest[0]["filename"]))
 
     def test_packaged_adr_documents_are_downstream_portable(self) -> None:
         forbidden_terms = [
@@ -52,6 +52,19 @@ class GovernancePackManifestTests(unittest.TestCase):
         ]
         for row in load_document_manifest("adr"):
             text = read_packaged_document_text("adr", row["filename"])
+            for term in forbidden_terms:
+                self.assertNotIn(term, text)
+
+    def test_packaged_spec_documents_are_downstream_portable(self) -> None:
+        forbidden_terms = [
+            "pack:",
+            "This pack",
+            "extension-pack",
+            "governance-pack",
+            "ssot-pack",
+        ]
+        for row in load_document_manifest("spec"):
+            text = read_packaged_document_text("spec", row["filename"])
             for term in forbidden_terms:
                 self.assertNotIn(term, text)
 

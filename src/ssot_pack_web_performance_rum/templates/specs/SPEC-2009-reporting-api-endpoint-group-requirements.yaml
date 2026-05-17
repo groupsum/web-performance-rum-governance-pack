@@ -1,0 +1,22 @@
+{
+  "id": "spc:reporting-api-endpoint-group-requirements",
+  "number": 2009,
+  "slug": "reporting-api-endpoint-group-requirements",
+  "title": "Reporting API Endpoint Group Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:browser-reporting-rum-policy"
+  ],
+  "authority_sources": [
+    "Reporting API"
+  ],
+  "requirements": [
+    "Route browser reports using governed endpoint group behavior.",
+    "Preserve endpoint group identity, report type, retry behavior, and retention metadata where applicable.",
+    "Keep endpoint routing evidence separate from report payload validation evidence.",
+    "Provide fixtures for default groups, named groups, missing groups, and unsupported group configurations."
+  ]
+}

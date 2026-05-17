@@ -1,0 +1,22 @@
+{
+  "id": "spc:navigation-timing-entry-requirements",
+  "number": 2001,
+  "slug": "navigation-timing-entry-requirements",
+  "title": "Navigation Timing Entry Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:navigation-timing-rum-policy"
+  ],
+  "authority_sources": [
+    "Navigation Timing"
+  ],
+  "requirements": [
+    "Capture document navigation timing entries using Navigation Timing entry semantics.",
+    "Preserve entry identity, navigation type, timing fields, and browsing-context metadata needed for RUM analysis.",
+    "Normalize timestamps and durations before persistence, export, comparison, or evidence generation.",
+    "Reject or quarantine navigation entries that cannot be validated against governed field expectations."
+  ]
+}

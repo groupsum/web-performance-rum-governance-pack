@@ -1,0 +1,31 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1003"
+number: 1003
+slug: "browser-performance-entry-target-curation-requirements"
+title: "Browser Performance Entry Target Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "browser"
+  - "performance-entry"
+summary: "Browser performance entry source curation must keep shared entry observation and source-specific entry families explicit."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "Performance Timeline"
+  - "Navigation Timing"
+  - "Resource Timing"
+  - "User Timing"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for browser performance entry targets MUST retain Performance Timeline as the shared observation authority.
+  
+  Source curation MUST retain Navigation Timing, Resource Timing, and User Timing as source-specific performance entry authorities.
+  
+  Source curation MUST preserve entry family, entry type, buffering, ordering, and observation targets as distinct curated concerns.
+

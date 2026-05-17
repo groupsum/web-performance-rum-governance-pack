@@ -1,0 +1,22 @@
+{
+  "id": "spc:navigation-timing-rum-derived-metric-requirements",
+  "number": 2002,
+  "slug": "navigation-timing-rum-derived-metric-requirements",
+  "title": "Navigation Timing RUM Derived Metric Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:navigation-timing-rum-policy"
+  ],
+  "authority_sources": [
+    "Navigation Timing"
+  ],
+  "requirements": [
+    "Derive page-load RUM metrics only from validated navigation timing entries.",
+    "Record the source fields and calculation rules used for each derived metric.",
+    "Reject derived metrics when required source fields are absent, invalid, or inconsistent.",
+    "Provide evidence showing raw fields, normalized fields, and derived metric outputs."
+  ]
+}

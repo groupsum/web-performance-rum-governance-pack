@@ -1,0 +1,22 @@
+{
+  "id": "spc:beacon-rum-delivery-requirements",
+  "number": 2010,
+  "slug": "beacon-rum-delivery-requirements",
+  "title": "Beacon RUM Delivery Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:beacon-rum-delivery-policy"
+  ],
+  "authority_sources": [
+    "W3C Beacon API"
+  ],
+  "requirements": [
+    "Use asynchronous non-blocking beacon delivery only for governed telemetry payloads.",
+    "Record delivery attempt metadata including payload type, payload size, target endpoint, and lifecycle context.",
+    "Keep beacon delivery evidence separate from timing-entry validation and report ingestion evidence.",
+    "Provide evidence for accepted delivery attempts and rejected delivery attempts."
+  ]
+}
