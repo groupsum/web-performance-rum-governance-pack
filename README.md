@@ -48,27 +48,27 @@ Web Performance And Real User Measurement
 
 ## Included ADRs
 
-- `adr:navigation-timing-rum-policy` - Navigation Timing RUM Policy
-- `adr:resource-timing-rum-policy` - Resource Timing RUM Policy
-- `adr:user-timing-instrumentation-policy` - User Timing Instrumentation Policy
-- `adr:performance-timeline-observation-policy` - Performance Timeline Observation Policy
-- `adr:browser-reporting-rum-policy` - Browser Reporting RUM Policy
-- `adr:beacon-rum-delivery-policy` - Beacon RUM Delivery Policy
+- [`adr:navigation-timing-rum-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1001-navigation-timing-rum-policy.yaml) - Navigation Timing RUM Policy
+- [`adr:resource-timing-rum-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1002-resource-timing-rum-policy.yaml) - Resource Timing RUM Policy
+- [`adr:user-timing-instrumentation-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1003-user-timing-instrumentation-policy.yaml) - User Timing Instrumentation Policy
+- [`adr:performance-timeline-observation-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1004-performance-timeline-observation-policy.yaml) - Performance Timeline Observation Policy
+- [`adr:browser-reporting-rum-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1005-browser-reporting-rum-policy.yaml) - Browser Reporting RUM Policy
+- [`adr:beacon-rum-delivery-policy`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/adr/ADR-1006-beacon-rum-delivery-policy.yaml) - Beacon RUM Delivery Policy
 
 ## Included SPECs
 
-- `spc:navigation-timing-entry-requirements` - Navigation Timing Entry Requirements
-- `spc:navigation-timing-rum-derived-metric-requirements` - Navigation Timing RUM Derived Metric Requirements
-- `spc:resource-timing-entry-requirements` - Resource Timing Entry Requirements
-- `spc:resource-timing-privacy-filtering-requirements` - Resource Timing Privacy Filtering Requirements
-- `spc:user-timing-mark-measure-requirements` - User Timing Mark Measure Requirements
-- `spc:performance-timeline-observer-requirements` - Performance Timeline Observer Requirements
-- `spc:performance-entry-export-envelope-requirements` - Performance Entry Export Envelope Requirements
-- `spc:reporting-api-report-ingestion-requirements` - Reporting API Report Ingestion Requirements
-- `spc:reporting-api-endpoint-group-requirements` - Reporting API Endpoint Group Requirements
-- `spc:beacon-rum-delivery-requirements` - Beacon RUM Delivery Requirements
-- `spc:beacon-payload-reliability-requirements` - Beacon Payload Reliability Requirements
-- `spc:web-performance-rum-audit-evidence-requirements` - Web Performance RUM Audit Evidence Requirements
+- [`spc:navigation-timing-entry-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2001-navigation-timing-entry-requirements.yaml) - Navigation Timing Entry Requirements
+- [`spc:navigation-timing-rum-derived-metric-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2002-navigation-timing-rum-derived-metric-requirements.yaml) - Navigation Timing RUM Derived Metric Requirements
+- [`spc:resource-timing-entry-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2003-resource-timing-entry-requirements.yaml) - Resource Timing Entry Requirements
+- [`spc:resource-timing-privacy-filtering-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2004-resource-timing-privacy-filtering-requirements.yaml) - Resource Timing Privacy Filtering Requirements
+- [`spc:user-timing-mark-measure-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2005-user-timing-mark-measure-requirements.yaml) - User Timing Mark Measure Requirements
+- [`spc:performance-timeline-observer-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2006-performance-timeline-observer-requirements.yaml) - Performance Timeline Observer Requirements
+- [`spc:performance-entry-export-envelope-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2007-performance-entry-export-envelope-requirements.yaml) - Performance Entry Export Envelope Requirements
+- [`spc:reporting-api-report-ingestion-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2008-reporting-api-report-ingestion-requirements.yaml) - Reporting API Report Ingestion Requirements
+- [`spc:reporting-api-endpoint-group-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2009-reporting-api-endpoint-group-requirements.yaml) - Reporting API Endpoint Group Requirements
+- [`spc:beacon-rum-delivery-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2010-beacon-rum-delivery-requirements.yaml) - Beacon RUM Delivery Requirements
+- [`spc:beacon-payload-reliability-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2011-beacon-payload-reliability-requirements.yaml) - Beacon Payload Reliability Requirements
+- [`spc:web-performance-rum-audit-evidence-requirements`](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/src/ssot_pack_web_performance_rum/templates/specs/SPEC-2012-web-performance-rum-audit-evidence-requirements.yaml) - Web Performance RUM Audit Evidence Requirements
 
 ## Install With uv
 

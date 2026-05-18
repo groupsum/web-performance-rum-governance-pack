@@ -90,29 +90,6 @@ wheels = [
 ]
 
 [[package]]
-name = "web-performance-rum-governance-pack"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "ssot-pack-contracts" },
-    { name = "tomli", marker = "python_full_version < '3.11'" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "ssot-pack-contracts", specifier = ">=0.2.17,<0.3.0" },
-    { name = "tomli", marker = "python_full_version < '3.11'", specifier = ">=2.0.1" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.0" }]
-
-[[package]]
 name = "tomli"
 version = "2.4.1"
 source = { registry = "https://pypi.org/simple" }
@@ -174,3 +151,26 @@ sdist = { url = "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac8
 wheels = [
     { url = "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548", size = 44614 },
 ]
+
+[[package]]
+name = "web-performance-rum-governance-pack"
+version = "0.1.1.dev1"
+source = { editable = "." }
+dependencies = [
+    { name = "ssot-pack-contracts" },
+    { name = "tomli", marker = "python_full_version < '3.11'" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ssot-pack-contracts", specifier = ">=0.2.17,<0.3.0" },
+    { name = "tomli", marker = "python_full_version < '3.11'", specifier = ">=2.0.1" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=8.0" }]
