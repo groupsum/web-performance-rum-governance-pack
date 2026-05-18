@@ -56,10 +56,14 @@ jobs:
       - name: Sync packaged docs
         run: python scripts/sync_packaged_docs.py
 
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
       - name: Run unit tests
         shell: bash
         run: |
-          PYTHONPATH=src python -m unittest discover -s tests -v
+          uv run python -m unittest discover -s tests -v
 
       - name: Prepare release metadata
         id: release_meta
