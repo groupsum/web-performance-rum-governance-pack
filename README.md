@@ -1,10 +1,13 @@
+<div align="center">
+
 # web-performance-rum-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/web-performance-rum-governance-pack.svg)](https://pypi.org/project/web-performance-rum-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/web-performance-rum-governance-pack.svg)](https://pypi.org/project/web-performance-rum-governance-pack/)
 [![License](https://img.shields.io/pypi/l/web-performance-rum-governance-pack.svg)](https://pypi.org/project/web-performance-rum-governance-pack/)
 [![Publish](https://github.com/groupsum/web-performance-rum-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/web-performance-rum-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/web-performance-rum-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence.
 
