@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:web-performance-rum`
 - PyPI package: `web-performance-rum-governance-pack`
 - Import package: `ssot_pack_web_performance_rum`
-- GitHub repository: `groupsum/web-performance-rum-governance-pack`
+- GitHub repository: [groupsum/web-performance-rum-governance-pack](https://github.com/groupsum/web-performance-rum-governance-pack)
 - Reservation owner: `extension-pack:web-performance-rum-governance-pack`
 
 ## Domain Focus
