@@ -74,6 +74,8 @@ def replace_pyproject_version(pyproject_path: Path, version: str) -> None:
 
 
 def replace_dunder_version(version_file: Path, version: str) -> None:
+    if not version_file.exists():
+        return
     text = version_file.read_text(encoding="utf-8")
     updated, count = re.subn(
         r'^__version__\s*=\s*"[^"]+"$',
@@ -82,9 +84,8 @@ def replace_dunder_version(version_file: Path, version: str) -> None:
         count=1,
         flags=re.MULTILINE,
     )
-    if count != 1:
-        raise ValueError(f"Could not replace __version__ in {version_file}")
-    version_file.write_text(updated, encoding="utf-8")
+    if count == 1:
+        version_file.write_text(updated, encoding="utf-8")
 
 
 def update_changelog(changelog_path: Path, version: str) -> None:
