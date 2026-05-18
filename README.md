@@ -1,4 +1,4 @@
-# ssot-pack-web-performance-rum
+# web-performance-rum-governance-pack
 
 Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence.
 
@@ -8,10 +8,10 @@ This repository is an installable SSOT Registry governance pack. It packages imm
 
 - Pack ID: `pack:web-performance-rum`
 - Priority: `P4.1`
-- PyPI package: `ssot-pack-web-performance-rum`
+- PyPI package: `web-performance-rum-governance-pack`
 - Import package: `ssot_pack_web_performance_rum`
 - GitHub repository: `groupsum/web-performance-rum-governance-pack`
-- Reservation owner: `extension-pack:ssot-pack-web-performance-rum`
+- Reservation owner: `extension-pack:web-performance-rum-governance-pack`
 
 ## Domain Focus
 
@@ -53,15 +53,15 @@ Web Performance And Real User Measurement
 ## Install With uv
 
 ```bash
-uv add ssot-pack-web-performance-rum
-uv add ssot-registry ssot-pack-web-performance-rum
+uv add web-performance-rum-governance-pack
+uv add ssot-registry web-performance-rum-governance-pack
 ```
 
 ## Use With The SSOT Registry CLI
 
 ```bash
-uvx --from ssot-registry ssot pack install ssot-pack-web-performance-rum
-uvx --from ssot-registry ssot pack sync . ssot-pack-web-performance-rum
+uvx --from ssot-registry ssot pack install web-performance-rum-governance-pack
+uvx --from ssot-registry ssot pack sync . web-performance-rum-governance-pack
 uv run ssot adr list .
 uv run ssot spec list .
 ```
@@ -78,5 +78,5 @@ spec_manifest = load_document_manifest("spec")
 ## Resources
 
 - GitHub repository: https://github.com/groupsum/web-performance-rum-governance-pack
-- PyPI package: https://pypi.org/project/ssot-pack-web-performance-rum/
+- PyPI package: https://pypi.org/project/web-performance-rum-governance-pack/
 - SSOT Registry: https://pypi.org/project/ssot-registry/

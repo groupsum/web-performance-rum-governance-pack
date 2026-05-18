@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-web-performance-rum",
+  "ssot_package_name": "web-performance-rum-governance-pack",
   "origin": {
     "id": "pack:web-performance-rum",
-    "package_name": "ssot-pack-web-performance-rum",
+    "package_name": "web-performance-rum-governance-pack",
     "import_name": "ssot_pack_web_performance_rum",
     "kind": "governance-pack",
     "title": "Web Performance And Real User Measurement",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-web-performance-rum"
+    "reservation_owner": "extension-pack:web-performance-rum-governance-pack"
   },
   "documents": {
     "adr": {

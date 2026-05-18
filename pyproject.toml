@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-pack-web-performance-rum"
+name = "web-performance-rum-governance-pack"
 version = "0.1.0"
 description = "Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence."
 readme = "README.md"
@@ -44,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-pack-web-performance-rum"
-Repository = "https://github.com/groupsum/ssot-pack-web-performance-rum"
-Issues = "https://github.com/groupsum/ssot-pack-web-performance-rum/issues"
+Homepage = "https://github.com/groupsum/web-performance-rum-governance-pack"
+Repository = "https://github.com/groupsum/web-performance-rum-governance-pack"
+Issues = "https://github.com/groupsum/web-performance-rum-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

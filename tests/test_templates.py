@@ -16,21 +16,21 @@ from ssot_pack_web_performance_rum import (
 class GovernancePackManifestTests(unittest.TestCase):
     def test_pack_metadata_contract_is_exposed(self) -> None:
         metadata = load_pack_metadata()
-        self.assertEqual("ssot-pack-web-performance-rum", __ssot_package_name__)
-        self.assertEqual("ssot-pack-web-performance-rum", __pypi_package_name__)
+        self.assertEqual("web-performance-rum-governance-pack", __ssot_package_name__)
+        self.assertEqual("web-performance-rum-governance-pack", __pypi_package_name__)
         self.assertEqual("1.0.0", metadata["schema_version"])
-        self.assertEqual("ssot-pack-web-performance-rum", metadata["ssot_package_name"])
+        self.assertEqual("web-performance-rum-governance-pack", metadata["ssot_package_name"])
         self.assertEqual("pack:web-performance-rum", metadata["origin"]["id"])
         self.assertEqual("ssot_pack_web_performance_rum", metadata["origin"]["import_name"])
         self.assertEqual("governance-pack", metadata["origin"]["kind"])
         self.assertEqual("extension-pack", metadata["trust"]["origin"])
-        self.assertEqual("extension-pack:ssot-pack-web-performance-rum", metadata["trust"]["reservation_owner"])
+        self.assertEqual("extension-pack:web-performance-rum-governance-pack", metadata["trust"]["reservation_owner"])
         self.assertFalse(metadata["trust"]["trusted_by_default"])
         self.assertEqual("1.0.0", load_pack_schema_version())
 
     def test_pack_manifest_contract_is_exposed(self) -> None:
         manifest = load_pack_manifest()
-        self.assertEqual("ssot-pack-web-performance-rum", manifest["metadata"]["origin"]["package_name"])
+        self.assertEqual("web-performance-rum-governance-pack", manifest["metadata"]["origin"]["package_name"])
         self.assertEqual(6, len(manifest["documents"]["adr"]))
         self.assertEqual(12, len(manifest["documents"]["spec"]))
 

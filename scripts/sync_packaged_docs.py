@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_TEMPLATES = ROOT / "src" / "ssot_pack_web_performance_rum" / "templates" / "adr"
 SPEC_TEMPLATES = ROOT / "src" / "ssot_pack_web_performance_rum" / "templates" / "specs"
-RESERVATION_OWNER = "extension-pack:ssot-pack-web-performance-rum"
+RESERVATION_OWNER = "extension-pack:web-performance-rum-governance-pack"
 MINIMUM_SCHEMA_VERSION = "0.4.0"
 
 
