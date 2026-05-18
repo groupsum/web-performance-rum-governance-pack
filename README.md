@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:web-performance-rum`
-- Priority: `P4.1`
 - PyPI package: `web-performance-rum-governance-pack`
 - Import package: `ssot_pack_web_performance_rum`
 - GitHub repository: `groupsum/web-performance-rum-governance-pack`
