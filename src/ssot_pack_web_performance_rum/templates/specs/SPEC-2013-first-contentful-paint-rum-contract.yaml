@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:first-contentful-paint-rum-contract",
+  "number": 2013,
+  "slug": "first-contentful-paint-rum-contract",
+  "title": "First Contentful Paint RUM Contract",
+  "status": "accepted",
+  "summary": "Defines FCP observation, attribution, eligibility, and evidence.",
+  "body": "## Requirements\n\n- Observe FCP from canonical Paint Timing entries and record navigation context and limitations.\n- Record algorithm version, browser support, sampling, and missing-data behavior.\n- Preserve enough evidence to reproduce the reported value.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.w3.org/TR/paint-timing/",
+    "https://www.w3.org/TR/largest-contentful-paint/",
+    "https://www.w3.org/TR/layout-instability/",
+    "https://www.w3.org/TR/event-timing/",
+    "https://w3c.github.io/longtasks/"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "first",
+    "contentful",
+    "paint",
+    "rum",
+    "contract"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:browser-performance-metrics-and-beacon-transport-are-owned-here"
+  ]
+}
