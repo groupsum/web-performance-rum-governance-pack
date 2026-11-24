@@ -114,7 +114,7 @@
     "title": "Browser Performance Metrics And Beacon Transport Are Owned Here",
     "filename": "ADR-1007-browser-performance-metrics-and-beacon-transport-are-owned-here.yaml",
     "target_path": ".ssot/adr/ADR-1007-browser-performance-metrics-and-beacon-transport-are-owned-here.yaml",
-    "sha256": "2b95d0b7d2c637982fceecca0dc51e546d8fbacbc8ca7a3f8e38b96fa3477e26",
+    "sha256": "fc80b30182cdb9a3cb070caa81ecff431ab169ff5b6930259e8d56851ccdd10e",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:web-performance-rum-governance-pack",
     "immutable": true,
