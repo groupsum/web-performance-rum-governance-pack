@@ -148,13 +148,15 @@ The script prints `pack:web-performance-rum` from the installed pack metadata.
 Source: [examples/usage.py](https://github.com/groupsum/web-performance-rum-governance-pack/blob/master/examples/usage.py).
 
 ```python
-"""Resolve and read a packaged specification without synchronizing it."""
+"""Find a specification and its downstream path in the installed manifest."""
 
-from ssot_pack_web_performance_rum import load_document_manifest, read_packaged_document_text
+from ssot_pack_web_performance_rum import load_document_manifest
 
-spec = next(row for row in load_document_manifest("spec") if row["id"] == "spc:navigation-timing-entry-requirements")
-document = read_packaged_document_text("spec", spec["filename"])
-assert spec["id"] in document
+specification = next(
+    row for row in load_document_manifest("spec")
+    if row["id"] == "spc:navigation-timing-entry-requirements"
+)
+assert specification["target_path"] == ".ssot/specs/SPEC-2001-navigation-timing-entry-requirements.yaml"
 ```
 <!-- readme-standards:end example.usage -->
 
