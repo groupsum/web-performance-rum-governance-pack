@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev2
+
+- Pending release notes.
+
 ## 0.2.0.dev1
 
 - Established canonical browser metric and Beacon ownership and added FCP, LCP, CLS, INP, long-task, and TBT contracts.

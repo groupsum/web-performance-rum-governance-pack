@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "web-performance-rum-governance-pack"
-version = "0.2.0.dev1"
+version = "0.2.0.dev2"
 description = "Installable SSOT governance pack for Navigation Timing, Resource Timing, User Timing, Performance Timeline, Reporting API, Beacon, and RUM evidence."
 readme = "README.md"
 requires-python = ">=3.10,<3.15"
